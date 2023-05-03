@@ -21,6 +21,19 @@ export const WrapperTask = styled.li`
   padding: 20px 30px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   flex-wrap: wrap;
+  gap: 15px;
+
+  && span {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  @media (max-width: 768px) {
+    width: 400px;
+    flex-direction: column;
+    padding: 15px 10px;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const ButtonStyled = styled.button`
@@ -33,4 +46,8 @@ export const ButtonStyled = styled.button`
     font-size: 13px;
     cursor: pointer;
     font-weight: 700;
+            @media (max-width: 768px) {
+    width: 100px;
+    padding: 10px;
+    }
 `;

@@ -32,7 +32,7 @@ const PokeApi = () => {
 
     return (
         <MyAppContainer>
-            <h1 style={{ color:"#ffff"}}>POKÉAPPI</h1>
+            <h1>POKÉAPPI</h1>
             <FormStyled onSubmit={handleSubmit}>
                 <InputStyledPokemon type="text" placeholder="Ingresa un ID" value={pokemonName} onChange={handleChange} />
                 <ButtonBuscar type="submit">Buscar</ButtonBuscar>

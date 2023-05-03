@@ -7,7 +7,7 @@ const TaskRender = ({ handleRemoveTask, tasksList}) => {
             <TaskContainerStyled>
                 {tasksList.map((tarea) => (
                     <WrapperTask key={tarea.id} tasks={tarea.title}>
-                        <h2>{tarea.title}</h2>
+                        <span>{tarea.title}</span>
                         <ButtonStyled onClick={() => handleRemoveTask(tarea.id)}>Borrar Tarea</ButtonStyled>
                     </WrapperTask>
                 ))}

@@ -48,7 +48,7 @@ function TodoList() {
   return (
     <>
       <MyAppContainer>
-        <h1 style={{ color: "#ffff" }} >TODO LIST</h1>
+        <h1>TODO LIST</h1>
         <AddNewTask handleSubmit={handleSubmit} inputTask={inputTask} handleChange={handleChange} handleClearTasks={handleClearTasks} />
         {tasksList.length === 0 && <h2 style={{ color: "yellow" }}>No hay tareas</h2>}
         {tasksList && <TaskRender tasksList={tasksList} handleRemoveTask={handleRemoveTask} />}

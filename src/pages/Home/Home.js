@@ -13,20 +13,27 @@ const HomeContainer = styled.div`
   padding-top: 5rem;
 
   && h1 {
-    font-size: 25px;
+    font-size: 35px;
     color: white;
+      @media (max-width: 990px) {
+        font-size: 25px;
+    }
   }
 `;
 
 const HomeLinksContainer = styled.div`
     display: flex;
     gap: 100px;
+     @media (max-width: 990px) {
+        flex-direction: column;
+        gap:50px;
+    }
 `
 
 const Home = () => {
     return (
         <HomeContainer>
-            <h1 style={{fontSize:"35px"}}>Bienvenidos a Home!</h1>
+            <h1>Bienvenidos a Home!</h1>
             <HomeLinksContainer>
                 <Link to="/TodoList">     
                         <SiTodoist style={{ fontSize: "250px", color: "#F24" }} />   

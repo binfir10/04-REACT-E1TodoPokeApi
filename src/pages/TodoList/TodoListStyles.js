@@ -7,4 +7,12 @@ export const MyAppContainer = styled.main`
   gap: 20px;
   margin-top: 100px;
 
+  && h1 {
+    color: #ffff;
+    font-size:40px;
+  }
+
+
+
 `;
+

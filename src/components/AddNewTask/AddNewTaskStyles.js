@@ -1,5 +1,14 @@
 import styled from "styled-components";
 
+
+export const TaskContainer = styled.div`
+    display: flex;
+    gap: 15px;
+    @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`
+
 export const SearchFormStyled = styled.form`
   display: flex;
   justify-content: center;
@@ -33,15 +42,9 @@ export const InputStyled = styled.input`
   }
 `;
 
-export const ButtonStyled = styled.button`
-  height: 100%;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-
-  &:disabled {
-    cursor: not-allowed;
-  }
+export const ButtonStyled = styled.div`
+display:flex;
+gap: 15px;
 `;
 
 
@@ -55,6 +58,9 @@ export const ButtonDelete = styled.button`
     font-size: 17px;
     cursor: pointer;
     font-weight: 700;
+        @media (max-width: 768px) {
+    width: 150px;
+    }
 `;
 
 export const ButtonAdd = styled(ButtonDelete)`
