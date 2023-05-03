@@ -10,7 +10,10 @@ export const MyAppContainer = styled.main`
     color: #ffff;
     font-size:40px;
   }
+   @media (max-width: 768px) {
+    margin-top: 35px;
 
+   }
 `;
 
 export const FormStyled = styled.form`
