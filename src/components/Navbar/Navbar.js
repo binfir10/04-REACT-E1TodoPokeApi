@@ -57,12 +57,13 @@ const LinkContainer = styled.ul`
     left: ${({ open }) => (open ? '0' : '-100%')};
     width: 100%;
     height: 100vh;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: center;
     transition: all 0.3s ease-in-out;
     background-color: #333;
     z-index: 10;
-    padding: 0;
+    padding: 100px 0;
+
   }
 `;
 
@@ -102,7 +103,6 @@ const Navbar = () => {
             <LogoStyled onClick={(e) => {
                 e.preventDefault()
                 navigate('/')
-                handleToggle()
 
             }}>
                 <img

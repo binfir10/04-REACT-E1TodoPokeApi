@@ -34,6 +34,10 @@ export const WrapperTask = styled.li`
     justify-content: center;
     align-items: center;
   }
+    @media (max-width: 412px) {
+    width: 300px;
+    padding: 15px 5px;
+  }
 `;
 
 export const ButtonStyled = styled.button`
