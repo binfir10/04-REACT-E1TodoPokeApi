@@ -12,7 +12,6 @@ export const MyAppContainer = styled.main`
   }
    @media (max-width: 768px) {
     margin-top: 35px;
-
    }
 `;
 

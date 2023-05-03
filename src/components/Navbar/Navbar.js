@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { NavLink, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
-import { SiRos } from "react-icons/si"
+import { SiReact, SiRos } from "react-icons/si"
 
 
 
@@ -104,11 +104,8 @@ const Navbar = () => {
                 e.preventDefault()
                 navigate('/')
 
-            }}>
-                <img
-                    alt="Logo"
-                    src="../../assets/favicon.ico"
-                />
+          }}>
+            <SiReact style={{color: "skyblue", fontSize:"40px"}}/>
             </LogoStyled>
             <NavIcon onClick={handleToggle}>
                 <SiRos style={{ color: "white" }} />
