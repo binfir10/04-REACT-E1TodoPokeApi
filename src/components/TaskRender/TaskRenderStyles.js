@@ -20,12 +20,19 @@ export const WrapperTask = styled.li`
   width: 100%;
   padding: 20px 30px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   gap: 15px;
+  list-style: none;
+  overflow-wrap: break-word;
+
+  
 
   && span {
     font-size: 25px;
     font-weight: 600;
+      display: inline-block;
+  max-width: 70%;
+  overflow-wrap: break-word;
   }
   @media (max-width: 768px) {
     width: 400px;
