@@ -34,7 +34,7 @@ export const WrapperTask = styled.li`
     justify-content: center;
     align-items: center;
   }
-    @media (max-width: 412px) {
+    @media (max-width: 470px) {
     width: 300px;
     padding: 15px 5px;
   }
