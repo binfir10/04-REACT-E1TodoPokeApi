@@ -17,15 +17,16 @@ justify-content: center;
 
 const NavContainer = styled.nav`
     display: flex;
-    width: 90%;
-    height: 67px;
+    width: 100%;
+    height: 50px;
     display: flex;
     align-items: center;
     position: fixed;
     top: 0;
-    background: #222;
+    background: #cccc;
     padding: 15px;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    border-bottom: 2px solid #999;
 `
 
 const LinkContainer = styled.ul`
@@ -40,15 +41,16 @@ const LinkContainer = styled.ul`
     font-weight: 600;
 
     && a {
-    color: white;
+    color: black;
     text-decoration: none;
     display: flex;
     align-items: center;
+
     cursor: pointer;
     }
 
     && a:hover{
-    color: orange;
+    color: #f21241;
     }
   @media (max-width: 768px) {
     flex-direction: column;
@@ -89,12 +91,7 @@ const NavIcon = styled.div`
 
 
 const Navbar = () => {
-    const tasksPending = useSelector((state) => state.taskApp.tasks);
-    const [open, setOpen] = useState(false);
 
-    const handleToggle = () => {
-        setOpen(!open);
-    };
 
     const navigate = useNavigate()
     return (
@@ -107,17 +104,9 @@ const Navbar = () => {
           }}>
             <SiReact style={{color: "skyblue", fontSize:"40px"}}/>
             </LogoStyled>
-            <NavIcon onClick={handleToggle}>
-                <SiRos style={{ color: "white" }} />
-            </NavIcon>
-            <LinkContainer open={open}>
-                <NavLink to="/" style={{ fontWeight: "800" }} onClick={handleToggle}>
-                    Home
-                </NavLink>
-                <NavLink to="/TodoList" onClick={handleToggle}>ToDo List <span style={{ fontWeight: "700", fontSize: "15px", color: tasksPending.length ? '#f53' : 'white' }}>({tasksPending.length})</span>
-                </NavLink>
-                <NavLink to="/PokeApi" onClick={handleToggle}>PokéAPI</NavLink>
-                </LinkContainer>
+
+            <span className='font-bold text-2xl'>Brian Figueroa</span>
+ 
             </NavContainer>
         </NavbarContainer>
     );

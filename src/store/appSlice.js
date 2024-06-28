@@ -4,15 +4,20 @@ const appSlice = createSlice({
     name: 'taskApp',
     initialState: {
         tasks: [],
+        inputTask: ""
     },
     reducers: {
         addTask: (state, action) => {
             const newTask = {
                 id: action.payload.id,
-                title: action.payload.title
+                title: action.payload.title,
+                fecha: action.payload.fecha
             };
             state.tasks.push(newTask);
             localStorage.setItem("tasks", JSON.stringify(state.tasks));
+        },
+        setInputTask: (state, action) => {
+            state.inputTask = action.payload; // Actualiza inputTask en el estado
         },
 
         removeTask: (state, action) => {
