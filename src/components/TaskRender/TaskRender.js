@@ -12,7 +12,7 @@ const TaskRender = () => {
                 {tasksList.map((tarea) => (
                     <li className="bg-neutral-900 w-full items-center text-white shadow-2xl shadow-teal-950 flex p-2 rounded-lg border border-neutral-700" key={tarea.id} tasks={tarea.title}>
                     <div className="flex flex-col w-full gap-4 pt-1 pb-2">
-                        <span className="text-sm underline underline-offset-4 text-neutral-400 decoration-neutral-600">{tarea.fecha } Hs.</span>
+                        <span className="text-sm underline underline-offset-4 text-neutral-400 decoration-neutral-600">{tarea.fecha }</span>
 
                         <span className="text-2xl capitalize">{tarea.title}</span>
                     </div>

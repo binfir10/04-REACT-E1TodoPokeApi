@@ -5,7 +5,7 @@ function Layout({ children }) {
 
             <>
             <Navbar />
-            <main className="grow">
+            <main className="grow px-4">
             {children}
 
             </main>
