@@ -1,18 +1,14 @@
-import React from 'react';
-import Routes from './routes/Routes';
-import Navbar from './components/Navbar/Navbar';
-import Layout from './components/Layout/Layout';
-
+import React from "react";
+import Layout from "./components/Layout/Layout";
+import Routes from "./routes/Routes";
 
 function App() {
   return (
     <>
       <Layout>
-        <Navbar />
         <Routes />
       </Layout>
     </>
-
   );
 }
 

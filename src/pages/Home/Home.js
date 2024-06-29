@@ -1,10 +1,8 @@
-import { useEffect, useState } from 'react'
-import { MyAppContainer } from './HomeStyles.js'
-import TaskRender from '../../components/TaskRender/TaskRender.js'
-import { useDispatch, useSelector } from 'react-redux'
+import { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import AddNewTask from '../../components/AddNewTask/AddNewTask.js';
+import TaskRender from '../../components/TaskRender/TaskRender.js';
 import { addTask, setTasks } from "../../store/appSlice.js";
-import AddNewTask from '../../components/AddNewTask/AddNewTask.js'
-import { TitlePrimary } from '../../components/titleStyle.js';
 
 
 function Home() {
@@ -42,12 +40,12 @@ function Home() {
   };
   return (
     <>
-      <main className='flex flex-col items-center gap-4 justify-center mt-7'>
-        <h1 className='text-5xl font-bold font-mono'>TODO LIST</h1>
+      <section className='flex flex-col items-center gap-4 justify-center mt-7'>
+        <h1 className='text-5xl font-bold mb-2  bg-gradient-to-tr from-emerald-900 to-sky-500 bg-clip-text text-transparent'>React List App</h1>
         <AddNewTask handleSubmit={handleSubmit} inputTask={inputTask} handleChange={handleChange} />
         {tasksList.length === 0 && <h2 style={{ color: "#444" }}>No hay tareas</h2>}
         {tasksList && <TaskRender/>}
-      </main>
+      </section>
     </>
   )
 }

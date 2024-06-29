@@ -1,10 +1,16 @@
-import { ContentContainerStyled, LayoutContainerStyled } from "./LayoutStyles";
+import Navbar from "../Navbar/Navbar";
 
 function Layout({ children }) {
     return (
-        <LayoutContainerStyled>
-            <ContentContainerStyled>{children}</ContentContainerStyled>
-        </LayoutContainerStyled>
+
+            <>
+            <Navbar />
+            <main className="grow">
+            {children}
+
+            </main>
+            </>
+
     );
 }
 

@@ -5,11 +5,14 @@
     body {
         margin: 0;
         user-select: none;
-        background: radial-gradient(#eeee, #aaaa);
+        color: #f9f9f9;
         font-family: system-ui, -apple-system, sans-serif;
-        -webkit-tap-highlight-color: transparent; 
+        background: #101009;
     }
 
     
 
-    
+    nav {
+        background: rgb(30, 30, 30, 0.3);
+
+    }
