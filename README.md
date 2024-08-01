@@ -20,7 +20,7 @@ TODOReact es una aplicación de gestión de tareas desarrollada con React y Tail
 1. **Clonar el repositorio:**
 
     ```bash
-    git clone https://github.com/tuusuario/TODOReact.git
+    git clone https://github.com/brianfigueroa10/04-REACTTodo.git
     ```
 
 2. **Instalar las dependencias:**
